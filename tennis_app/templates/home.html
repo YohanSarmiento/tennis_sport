@@ -1,0 +1,59 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block head %}
+<title>Home | Tennis</title>
+<!-- <script type="text/javascript" src="{% static 'js/index.js' %}"></script> -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+{% endblock head %}
+
+{% block body %}
+
+<body class="mx-0 ">
+  <div class="container-fluid my-0">
+    <div class="row pe-0">
+      <div lass="col-lg-12 mx-0">
+        <img src="{% static 'images/tennis_campus7.jpg' %}" class="img-fluid imghome" alt="">
+
+      </div>
+    </div>
+    <h2 class="d-flex justify-content-center">This is the best place for you</h2>
+    <div class="d-flex justify-content-center">
+      <div class="col-sm-4 col-lg-6">
+        <p class="text-center">
+          TennisZone is your ultimate online destination for everything tennis! 
+          Discover the latest news, improve your game with our guides, 
+          and find top tennis venues. Join our community of enthusiasts and explore
+           our courses and training programs led by expert instructors. 
+           TennisZone is your hub for all things tennis—start your journey today!"
+        </p>
+      </div>
+    </div>
+    <div class="row pe-0">
+      <div lass="col-lg-12 mx-0">
+        <img src="{% static 'images/tennis_tournament3.jpg' %}" class="img-fluid imghome" alt="">
+
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+      <div class="col-sm-4 col-lg-6">
+        <p class="text-center">
+          In this place you find 8 tennis courts with regulatory dimensions,
+           all courts have professional lighting. We have a tennis school for children from
+          6 years of age and classes for adults, we have 5 coaches, 3 sparring partners, 
+          1 physical trainer and 1 psychologist. To practice this sport in our facilities you can
+           do so by making reservations on this website.
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script type="text/javascript" src="{% static 'js/home.js' %}"></script> -->
+</body>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block head %}
+<title>Home | Tennis</title>
+<!-- <script type="text/javascript" src="{% static 'js/index.js' %}"></script> -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/venue.css' %}">
+
+{% endblock head %}
+
+{% block body %}
+
+<body class="mx-0 ">
+  <div class="row gy-3">
+    {% for course in courses %}
+    <div class="col-sm-4 col-lg-6 mx-3 pt-3">
+      <img src="{% static 'images/courses.jpg' %}" class="img-fluid imgcourse" alt="">
+    </div>
+    <div class="col-sm-4 col-lg-3">
+      <h3>{{ course.name }}</h3>
+      <p>Instructur: {{ course.instructor }}</p>
+      <hr>
+      <p>Schedule: {{ course.schedule }}</p>
+      <hr>
+      <p>{{ course.description }}</p>
+    </div>
+    <hr>  
+    {% endfor %}
+  </div>
+
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script type="text/javascript" src="{% static 'js/home.js' %}"></script> -->
+</body>
+{% endblock %}

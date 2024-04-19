@@ -1,0 +1,38 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block head %}
+<title>Home | Tennis</title>
+<!-- <script type="text/javascript" src="{% static 'js/index.js' %}"></script> -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/venue.css' %}">
+
+{% endblock head %}
+
+{% block body %}
+
+<body class="mx-0 ">
+  <div class="container-fluid my-0">
+    <h2 class="d-flex justify-content-center">Venues Tennis Zone</h2>
+    <div class="row gy-3">
+      {% for venue in venues %}
+      <div class="col-sm-4 col-lg-6">
+        <img src="{{venue.imageURL}}" class="img-fluid imgvenue" alt="">
+      </div>
+      <div class="col-sm-4 col-lg-3">
+        <h3>{{ venue.name }}</h3>
+        <p>{{ venue.location }}</p>
+        <p>Call us: {{ venue.phone }}</p>
+        <hr>
+        <p>{{ venue.schedule }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script type="text/javascript" src="{% static 'js/home.js' %}"></script> -->
+</body>
+{% endblock %}

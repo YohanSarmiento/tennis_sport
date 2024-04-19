@@ -1,0 +1,41 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block head %}
+<title>Home | Tennis</title>
+<!-- <script type="text/javascript" src="{% static 'js/index.js' %}"></script> -->
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"> -->
+
+{% endblock head %}
+
+{% block body %}
+
+<body class="mx-0 ">
+            <h2 class="d-flex justify-content-center">Our History</h2>
+            <div class="row gy-3"> <!-- manually change gutter using g{d}-{n} -->
+                <div class="col-sm-4 col-lg-6">
+                    <img src="{% static 'images/img_about.jpg' %}" class="img-fluid imghome" alt="">
+                    <!-- <div class="p-5 bg-primary text-light">col 1</div> -->
+                </div>
+                <div class="col-sm-4 col-lg-6">
+                    <p>
+                        The Colombian Tennis Academy has been training international players for 36 years. Great champions such as Fabiola Zuluaga, Mauricio Hadad, Carmiña Giraldo, Catalina Castaño, Miguel Tobón, Mario Rincón, René Gómez, Pablo González, Alejandro Falla and Carlos Salamanca, among others, have passed through its courts.
+                    </p>
+                    <p>
+                        In the 90s it was selected by the Colombian Tennis Federation (FCT) as a preparation center for the teams that would represent Colombia in the Davis Cup and in Youth, South American and World tournaments.
+                    </p>
+                    <p>From 1997 to 2003, the Sanitas International Organization chose the ACT as the headquarters of the Colsanitas team, developing WTA Tour tournaments at its headquarters; the Colsanitas Cup; the Fed Cup of the International Tennis Federation (ITF), which is considered the most important team tournament in women's tennis, and the South American Junior Championships.</p>
+                    <p>At the end of 2003, the ACT reached an agreement with the Americas Tennis Institute, in Florida, United States, to have training headquarters for highly competitive players in the United States, Chile and Argentina.</p>
+                    <p>Currently, the Colombian Tennis Academy is a meeting point for new generations of Colombian tennis players, home to various local, national and international tournaments and with a great commitment to the promotion of sport, health and well-being, with programs for schools. , universities, companies and families. Today it is considered the most stable competition center in Latin America, with 20 years of history in holding international tournaments.</p>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <script type="text/javascript" src="{% static 'js/home.js' %}"></script> -->
+</body>
+{% endblock %}

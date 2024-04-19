@@ -1,0 +1,22 @@
+.thumbnail{/*para store.html...placeholder.png....*/
+  /* border: 2px rgb(1, 156, 35) solid; */
+width: 100%;
+height: 200px;
+-webkit-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+  -moz-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+  box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+}
+
+.tennisImg{
+  margin-top: 0px;
+  padding-top: opx;
+  background: url("/static/images/tennis_campus.jpg") 50% 0 no-repeat fixed; 
+  background-position: center; 
+  background-size: cover;}
+
+  .tennisImg{
+    width: 1411px;
+    height: 600px;
+  }
+
+
